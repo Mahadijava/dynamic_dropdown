@@ -12,15 +12,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/division")
-//@CrossOrigin(origins = "http://localhost:8080", allowCredentials = "true")
+@CrossOrigin(origins = "http://localhost:8080", allowCredentials = "true")
 public class DivisionController {
 
     @Autowired
     DivisionService divisionService;
 
     @GetMapping
-
-
     List<Division> getAlldivisions(){
 
         return divisionService.getAllDivision();

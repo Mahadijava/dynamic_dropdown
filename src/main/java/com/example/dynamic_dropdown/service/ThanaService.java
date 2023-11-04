@@ -15,4 +15,8 @@ public class ThanaService {
     public List<Thana> thanaList(){
         return thanaRepository.findAll();
     }
+
+    public List<Thana> getAllThanaByDistrictId(String district_id){
+        return thanaRepository.getAllThanaByDistrictId(district_id);
+    }
 }

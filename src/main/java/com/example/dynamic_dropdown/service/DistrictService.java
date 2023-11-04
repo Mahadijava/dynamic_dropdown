@@ -15,4 +15,10 @@ public class DistrictService {
     public List<District> districtList(){
         return districtRepositiry.findAll();
     }
+
+    public List<District> districtListByDivisionId(String divId){
+        return districtRepositiry.findAllByDivisionId( divId);
+    }
 }
+
+

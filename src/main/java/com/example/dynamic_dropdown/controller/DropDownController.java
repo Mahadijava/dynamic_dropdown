@@ -19,7 +19,6 @@ public class DropDownController {
         dropDownService.save(dropDown);
     }
 
-    @GetMapping("post")
     List<DropDown> listOfDropDown(){
         return dropDownService.dropDownList();
     }
